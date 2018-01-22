@@ -19,6 +19,7 @@ POST http://staging.kangyu.co/v3/hospitals/search
 Parameters:
 query
   text 要搜索的关键字
+page 分页参数，从1开始，默认每页返回10条数据
 
 Response:
 hospitals
@@ -35,7 +36,8 @@ curl -XPOST -H 'Content-Type: application/json' 'http://staging.kangyu.co/v3/hos
 {
   "query": {
     "text": "第六"
-  }
+  },
+  "page": 2
 }
 '
 ```
