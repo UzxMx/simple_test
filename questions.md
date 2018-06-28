@@ -14,7 +14,7 @@
 
 获得医院列表的接口：
 ```
-POST http://staging.kangyu.co/v3/hospitals/search
+POST /api/v3/hospitals/search
 
 Parameters:
 query
@@ -56,7 +56,7 @@ curl -XPOST -H 'Content-Type: application/json' 'http://staging.kangyu.co/v3/hos
 
 获得医院详情的接口：
 ```
-GET http://staging.kangyu.co/v3/hospitals/:id
+GET /api/v3/hospitals/:id
 
 Response:
 id 医院ID
